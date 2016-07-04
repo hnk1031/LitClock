@@ -18,22 +18,19 @@ import java.util.TimerTask;
 
 public class MainActivity extends Activity {
 
-    // 画面向きを指定する変数だよ変更してみよう
-    // true->横向き, false->縦向き
+    // 画面の向き
     private final static boolean SCREEN_ORIENTATION = false;
 
-    // 背景を時間ごとに変更するかどうかの設定
-    // true->変更する, false->変更しない
+    // 背景を時間ごとに変更する
     private final static boolean CHANGE_BACKGROUND = true;
 
     // 背景画像が変わる時間
-    // 画像を変える間隔を秒でセットしよう！
     private final int CHANGE_INTERVAL = 20;
 
     private static final String TIME_ZONE = "Asia/Tokyo";
     private static final TimeZone sTimeZone = TimeZone.getTimeZone(TIME_ZONE);
 
-    // どの時計を動かすかを指定する
+    // どの時計を動かすかの指定
     private static final int HOUR_TEN = 0;
     private static final int HOUR_ONE = 1;
     private static final int MIN_TEN = 3;
